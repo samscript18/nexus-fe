@@ -1,0 +1,10 @@
+export { default as Navbar } from "./Navbar";
+export { default as Header } from "./Header";
+export { default as Connection } from "./Connection";
+export { default as About } from "./About";
+export { default as Fold } from "./Fold";
+export { default as Vision } from "./Vision";
+export { default as Room } from "./Room";
+export { default as WhereAndWhen } from "./Where&When";
+export { default as CTA } from "./Cta";
+export { default as Footer } from "./Footer";
