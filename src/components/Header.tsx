@@ -4,6 +4,7 @@ import nexus from "@/public/NEXUS.png";
 import nexus_2 from "@/public/2024.png";
 import img from "@/public/apple_vision.png";
 import img_2 from "@/public/Group 5.png";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -33,7 +34,9 @@ const Header = () => {
             educational landscape, serving as a conduit between industrial and
             intelligence ages.
           </h3>
-          <Button className="bg-[#004080] text-white" />
+          <Link href={"/register"}>
+            <Button className="bg-[#004080] text-white" />
+          </Link>
         </div>
         <Image
           src={nexus_2}

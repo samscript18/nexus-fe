@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Comic_Neue } from "next/font/google";
 import "./globals.css";
+import RQProvider from "../Provider/reactQuery.provider";
+import { Toaster } from "react-hot-toast";
 
 const comic_neue = Comic_Neue({
   subsets: ["latin"],
@@ -8,8 +10,8 @@ const comic_neue = Comic_Neue({
 });
 
 export const metadata: Metadata = {
-  title: "NEXUS",
-  description: "Nexus 2024",
+  title: "NEXT",
+  description: "New Evolutionaries, Xplorers, and Thinkers",
 };
 
 export default function RootLayout({
@@ -19,7 +21,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={comic_neue.className}>{children}</body>
+      <RQProvider>
+        <Toaster position="top-right" reverseOrder={false} />
+        <body className={comic_neue.className}>{children}</body>
+      </RQProvider>
     </html>
   );
 }

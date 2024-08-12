@@ -1,6 +1,7 @@
 import Image from "next/image";
 import visionImg from "@/public/Image.svg";
 import { Button } from "./Button";
+import Link from "next/link";
 
 const Vision = () => {
   return (
@@ -34,7 +35,9 @@ const Vision = () => {
           pioneers, trailblazers and visionaries who turn potential into
           reality.
         </p>
-        <Button className="bg-[#004080] text-white" />
+        <Link href={"/register"}>
+          <Button className="bg-[#004080] text-white" />
+        </Link>
       </div>
     </div>
   );

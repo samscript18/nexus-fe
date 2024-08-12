@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Button } from "./Button";
 import arrowImg from "@/public/Arrow hero.svg";
 import logo from "@/public/Logo.png";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -12,7 +13,9 @@ const CTA = () => {
             We hope to see you there!
           </h1>
         </div>
-        <Button className="bg-[#004080] text-white w-[200px]" />
+        <Link href={"/register"}>
+          <Button className="bg-[#004080] text-white w-[200px]" />
+        </Link>
         <div className="hidden md:flex absolute top-[25%] right-[35%] lg:top-[5%] lg:right-[33%] md:top-[12%] md:right-[25%]">
           <Image
             src={arrowImg}

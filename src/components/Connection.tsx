@@ -1,6 +1,7 @@
 import Image from "next/image";
 import img from "@/public/Balls.png";
 import { Button } from "./Button";
+import Link from "next/link";
 
 const Connection = () => {
   return (
@@ -18,7 +19,9 @@ const Connection = () => {
             <span className="md:mx-12">the</span> birthplace{" "}
             <span className="md:mx-12">of</span> creativity.
           </p>
-          <Button className="bg-[#004080] text-white" />
+          <Link href={"/register"}>
+            <Button className="bg-[#004080] text-white" />
+          </Link>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@ import { Button } from "../components/Button";
 import { useState } from "react";
 import { navData } from "../utils/data";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState<boolean>(true);
@@ -43,7 +44,9 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <Button className="hidden lg:flex bg-[#004080] text-white" />
+        <Link href={"/register"}>
+          <Button className="hidden lg:flex bg-[#004080] text-white" />
+        </Link>
 
         <div className="flex lg:hidden duration-500">
           {toggleMenu ? (

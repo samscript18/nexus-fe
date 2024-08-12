@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "./Button";
 
 const Where = () => {
@@ -18,7 +19,9 @@ const Where = () => {
           in coming years, traverse continents, spreading the gospel of the
           future and empowering young men and women to take action.
         </p>
-        <Button className="bg-white text-[#004080]" />
+        <Link href={"/register"}>
+          <Button className="bg-white text-[#004080]" />
+        </Link>
       </div>
     </div>
   );
