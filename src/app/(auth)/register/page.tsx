@@ -28,8 +28,8 @@ export default function Register() {
   return (
     <form onSubmit={onSubmit} className="text-white z-[4]">
       {/* title */}
-      <div>
-        <h1 className="text-[1.6rem] font-bold uppercase">Register</h1>
+      <div className="flex flex-col justify-center items-center">
+        <h1 className="text-[1.6rem] font-bold uppercase">Registration</h1>
         <p className="text-[.85rem] mt-3">Register for NEXUS 2024</p>
       </div>
 
