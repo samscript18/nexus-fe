@@ -8,7 +8,7 @@ export const useSignUp = () => {
   const mutation = useMutation({
     mutationKey: ["useSignUp"],
     mutationFn: async (data: SignUpDTO) => {
-      const response = await http.post("/user/signup", {
+      const response = await http.post("/user", {
         firstName: data?.firstName,
         lastName: data?.lastName,
         email: data?.email,
@@ -20,8 +20,8 @@ export const useSignUp = () => {
     onError(error) {
       return errorHandler(error);
     },
-    onSuccess() {
-      toast.success("Registration Successful");
+    onSuccess(data) {
+      toast.success(data.message);
     },
   });
 
