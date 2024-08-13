@@ -29,15 +29,15 @@ export default function Register() {
     <form onSubmit={onSubmit} className="text-white z-[4]">
       {/* title */}
       <div>
-        <h1 className="text-[1.3rem] font-bold">Sign Up</h1>
-        <p className="text-[.85rem] mt-2">Register for NEXUS 2024</p>
+        <h1 className="text-[1.6rem] font-bold uppercase">Register</h1>
+        <p className="text-[.85rem] mt-3">Register for NEXUS 2024</p>
       </div>
 
       <div className="flex w-full gap-[1rem] flex-col">
         <TextField
-          label="FirstName Address"
+          label="FirstName"
           InputProps={{
-            placeholder: "FirstName Address",
+            placeholder: "Enter your first name",
             type: "firstName",
             required: true,
             value: firstName,
@@ -45,13 +45,13 @@ export default function Register() {
               setFirstName(e.target.value);
             },
           }}
-          className="mt-6"
+          className="mt-6 focus:border-[#004080]"
           LabelProps={{ className: "text-[.8rem] font-[500]" }}
         />
         <TextField
           label="LastName"
           InputProps={{
-            placeholder: "LastName",
+            placeholder: "Enter your last name",
             type: "lastName",
             required: true,
             value: lastName,
@@ -59,13 +59,13 @@ export default function Register() {
               setLastName(e.target.value);
             },
           }}
-          className="mt-3"
+          className="mt-3 focus:border-[#004080]"
           LabelProps={{ className: "text-[.8rem] font-[500]" }}
         />{" "}
         <TextField
           label="Email"
           InputProps={{
-            placeholder: "Email",
+            placeholder: "Enter your email address",
             type: "email",
             required: true,
             value: email,
@@ -73,7 +73,7 @@ export default function Register() {
               setEmail(e.target.value);
             },
           }}
-          className="mt-3"
+          className="mt-3 focus:border-[#004080]"
           LabelProps={{ className: "text-[.8rem] font-[500]" }}
         />
       </div>
