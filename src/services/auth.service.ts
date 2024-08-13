@@ -8,7 +8,7 @@ export const useSignUp = () => {
   const mutation = useMutation({
     mutationKey: ["useSignUp"],
     mutationFn: async (data: SignUpDTO) => {
-      const response = await http.post("/user", {
+      const response = await http.post("/user/signup", {
         firstName: data?.firstName,
         lastName: data?.lastName,
         email: data?.email,
