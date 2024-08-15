@@ -4,7 +4,7 @@ import Image from "next/image";
 import navLogo from "@/public/nav_logo.png";
 import { Button } from "../components/Button";
 import { useState } from "react";
-import { navData } from "../utils/data";
+import { navData } from "../utils/navbar.data";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
 import Link from "next/link";
 

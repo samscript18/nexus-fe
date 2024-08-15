@@ -1,6 +1,6 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import borderImg from "@/public/Subtract.png";
-import { navData } from "../utils/data";
+import { navData } from "../utils/navbar.data";
 
 const Footer = () => {
   return (
