@@ -29,7 +29,7 @@ const VerifyPayment = () => {
             </h2>
             <p className="my-2 text-gray-600">
               Your payment of {data?.transaction_currency_id}
-              {data?.transaction_amount} was successful.
+              {data?.transaction_amount / 100} was successful.
             </p>
           </>
         )}
@@ -41,7 +41,7 @@ const VerifyPayment = () => {
             </h2>
             <p className="my-2 text-gray-600">
               Your payment of {data?.transaction_currency_id}
-              {data?.transaction_amount} failed.
+              {data?.transaction_amount / 100} failed.
             </p>
           </>
         )}
@@ -53,7 +53,7 @@ const VerifyPayment = () => {
             </h2>
             <p className="my-2 text-gray-600">
               Your payment of {data?.transaction_currency_id}
-              {data?.transaction_amount} is pending.
+              {data?.transaction_amount / 100} is pending.
             </p>
           </div>
         )}
