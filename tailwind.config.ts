@@ -23,15 +23,17 @@ const config: Config = {
           "0%": { transform: "scale(0.5)" },
           "100%": { transform: "scale(1)" },
         },
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
       },
     },
     animation: {
       marquee: "marquee 7s linear infinite",
       scale: "scale 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both",
+      spin: "spin 3s linear infinite",
     },
-    // fontFamily: {
-    //   roboto_condensed,
-    // },
   },
   plugins: [],
 };
