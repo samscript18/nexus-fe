@@ -2,7 +2,6 @@ import { useMutation } from "@tanstack/react-query";
 import { http } from "../config/axios.config";
 import { errorHandler } from "../utils/error";
 import { SignUpDTO } from "../schema/dto/signup.dto";
-import toast from "react-hot-toast";
 
 export const useSignUp = () => {
   const mutation = useMutation({
@@ -21,7 +20,7 @@ export const useSignUp = () => {
       return errorHandler(error);
     },
     onSuccess(data) {
-      toast.success(data.message);
+      window.location.href = data?.checkout_url;
     },
   });
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Comic_Neue } from "next/font/google";
 import "./globals.css";
-import RQProvider from "../Provider/reactQuery.provider";
+import RQProvider from "../provider/reactQuery.provider";
 import { Toaster } from "react-hot-toast";
 
 const comic_neue = Comic_Neue({
@@ -22,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <RQProvider>
-        <Toaster position="top-right" reverseOrder={false} />
-        <body className={comic_neue.className}>{children}</body>
+        <body className={comic_neue.className}>
+          <Toaster position="top-right" reverseOrder={false} />
+          <div>{children}</div>
+        </body>
       </RQProvider>
     </html>
   );

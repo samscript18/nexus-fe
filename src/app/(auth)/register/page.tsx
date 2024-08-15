@@ -1,17 +1,13 @@
 "use client";
-import { Button } from "@/src/components/Button";
 import TextField from "@/src/components/textField";
 import { useSignUp } from "@/src/services/auth.service";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
-import React, { useEffect, useState } from "react";
-import toast from "react-hot-toast/headless";
+import React, { useState } from "react";
+import toast from "react-hot-toast";
 
 export default function Register() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const { push } = useRouter();
 
   const mutation = useSignUp();
 
@@ -23,6 +19,8 @@ export default function Register() {
       lastName,
       email,
     });
+
+    toast.success("Registration Successful");
   };
 
   return (
@@ -76,12 +74,12 @@ export default function Register() {
           className="mt-3 focus:border-[#004080]"
           LabelProps={{ className: "text-[.8rem] font-[500]" }}
         />
-    <button
-      type="submit"
-      className={`bg-[#1a1a1a] text-[#fff] text-[.95rem] md:text-[1rem] lg:text-[1.05rem] font-semibold mt-3 py-3 px-4 rounded-md uppercase`}
-    >
-      Submit
-    </button>
+        <button
+          type="submit"
+          className={`bg-[#1a1a1a] text-[#fff] text-[.95rem] md:text-[1rem] lg:text-[1.05rem] font-semibold mt-3 py-3 px-4 rounded-md uppercase`}
+        >
+          Submit
+        </button>
       </div>
     </form>
   );

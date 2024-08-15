@@ -1,4 +1,3 @@
-import { MdArrowUpward } from "react-icons/md";
 import {
   Navbar,
   Header,
@@ -10,7 +9,7 @@ import {
   WhereAndWhen,
   CTA,
   Footer,
-} from "../components";
+} from "../../components";
 export default function Home() {
   return (
     <main className="overflow-hidden">
