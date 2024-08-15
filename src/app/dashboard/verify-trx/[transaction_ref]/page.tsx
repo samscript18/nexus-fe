@@ -21,14 +21,15 @@ const VerifyPayment = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white w-[600px] flex flex-col justify-center items-center p-8 rounded-xl shadow-md text-center">
-        {data?.transaction_status === "successful" && (
+        {data?.transaction_status === "success" && (
           <>
             <HiOutlineCheckCircle size={100} className="text-green-700 mb-8" />
             <h2 className="sm:text-xl md:text-2xl text-green-700 pb-3 font-bold">
               Payment Successful!
             </h2>
             <p className="my-2 text-gray-600">
-              Your payment of {data?.transaction_amount} was successful.
+              Your payment of {data?.transaction_currency_id}
+              {data?.transaction_amount} was successful.
             </p>
           </>
         )}
@@ -39,7 +40,8 @@ const VerifyPayment = () => {
               Payment Failed!
             </h2>
             <p className="my-2 text-gray-600">
-              Your payment of {data?.transaction_amount} failed.
+              Your payment of {data?.transaction_currency_id}
+              {data?.transaction_amount} failed.
             </p>
           </>
         )}
@@ -50,7 +52,8 @@ const VerifyPayment = () => {
               Payment pending!
             </h2>
             <p className="my-2 text-gray-600">
-              Your payment of {data?.transaction_amount} is pending.
+              Your payment of {data?.transaction_currency_id}
+              {data?.transaction_amount} is pending.
             </p>
           </div>
         )}

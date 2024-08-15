@@ -12,16 +12,8 @@ const Payment = () => {
   const { push } = useRouter();
 
   const handlePayment = async () => {
-    const transaction = await axios.post(
-      `https://sandbox-api-d.squadco.com/transaction/initiate`,
-      {
-        email: "adeolasam20@gmail.com",
-        amount: 1000 * 100,
-        currency: "NGN",
-        initiate_type: "inline",
-        transaction_ref: tx_ref,
-        callback_url: `https://nexus-2024.vercel.app/dashboard/verify-trx/${tx_ref}`,
-      },
+    const transaction = await axios.get(
+      `https://sandbox-api-d.squadco.com/transaction/verify/1574079b-f848-4e09-8799-bbd241c9b926`,
       {
         headers: {
           Authorization: `Bearer sandbox_sk_13f56bb394656a2ead543764384ac8e7fd59328721ed`,
