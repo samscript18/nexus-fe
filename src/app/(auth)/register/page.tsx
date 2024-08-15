@@ -3,6 +3,7 @@ import TextField from "@/src/components/textField";
 import { useSignUp } from "@/src/services/auth.service";
 import React, { useState } from "react";
 import toast from "react-hot-toast";
+import { BiLoaderAlt } from "react-icons/bi";
 
 export default function Register() {
   const [firstName, setFirstName] = useState("");
@@ -78,7 +79,14 @@ export default function Register() {
           type="submit"
           className={`bg-[#1a1a1a] text-[#fff] text-[.95rem] md:text-[1rem] lg:text-[1.05rem] font-semibold mt-3 py-3 px-4 rounded-md uppercase`}
         >
-          Submit
+          {mutation.isPending ? (
+            <>
+              <BiLoaderAlt size={24} className="animate-spin text-[#fff]" />
+              Proceeding to payment
+            </>
+          ) : (
+            <>Submit</>
+          )}
         </button>
       </div>
     </form>

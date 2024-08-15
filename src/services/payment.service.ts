@@ -6,9 +6,7 @@ export const useVerifyTransaction = () => {
   const mutation = useMutation({
     mutationKey: ["useVerifyTransaction"],
     mutationFn: async (data: string) => {
-      const response = await http.post(`/payment/verify-trx`, {
-        transaction_ref: data,
-      });
+      const response = await http.get(`/payment/verify-trx/${data}`);
       return response?.data;
     },
     onError: (error: Error) => {

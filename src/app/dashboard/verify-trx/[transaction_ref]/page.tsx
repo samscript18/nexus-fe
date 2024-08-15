@@ -8,12 +8,12 @@ import { HiOutlineCheckCircle, HiOutlineXCircle } from "react-icons/hi";
 import { MdOutlinePending } from "react-icons/md";
 
 const VerifyPayment = () => {
-  const transaction_ref = useSearchParams().get("transaction_ref");
+  const transaction_ref = useSearchParams().get("reference");
   const { data, mutate, isPending } = useVerifyTransaction();
 
   useEffect(() => {
     mutate(transaction_ref!);
-  }, [transaction_ref]);
+  }, []);
 
   if (isPending)
     return <Loader loading={true} loadingText="Verifying Transaction..." />;
