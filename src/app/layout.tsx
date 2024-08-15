@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Comic_Neue } from "next/font/google";
 import "./globals.css";
-import RQProvider from "../provider/reactQuery.provider";
+import RQProvider from "@/src/provider/reactQuery.provider";
 import { Toaster } from "react-hot-toast";
 
 const comic_neue = Comic_Neue({
