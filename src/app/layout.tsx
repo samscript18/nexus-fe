@@ -20,13 +20,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <RQProvider>
+    <RQProvider>
+      <html lang="en">
         <body className={comic_neue.className}>
           <Toaster position="top-right" reverseOrder={false} />
           <div>{children}</div>
         </body>
-      </RQProvider>
-    </html>
+      </html>
+    </RQProvider>
   );
 }
