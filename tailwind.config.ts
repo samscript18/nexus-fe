@@ -1,11 +1,4 @@
 import type { Config } from "tailwindcss";
-// import { Roboto_Condensed } from "next/font/google";
-
-// const roboto_condensed = Roboto_Condensed({
-//   subsets: ["latin"],
-//   weight: ["300", "400", "700"],
-// });
-
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -32,7 +25,7 @@ const config: Config = {
     animation: {
       marquee: "marquee 7s linear infinite",
       scale: "scale 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both",
-      spin: "spin 3s linear infinite",
+      spin: "spin 1s linear infinite",
     },
   },
   plugins: [],
