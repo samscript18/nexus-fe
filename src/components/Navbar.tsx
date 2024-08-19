@@ -15,10 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full bg-[#1a1a1a] lg:relative md:px-[2rem] lg:px-[4rem] md:pt-4 z-30">
-      <nav
-        id="home"
-        className="w-full flex justify-between items-center p-2 md:p-3 border-2 border-[#262626]"
-      >
+      <nav className="w-full flex justify-between items-center p-2 md:p-3 border-2 border-[#262626]">
         <Image src={navLogo} width={80} height={80} alt="nexus-logo" />
         <ul className="hidden lg:flex justify-between items-center">
           {navData.map((item) => {

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import aboutImg from "@/public/aboutImg.png";
+import aboutImg from "@/public/aboutImg.jpg";
 
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
       <Image
         src={aboutImg}
         alt="about-img"
-        className="h-[284px] md:h-[600px] py-12"
+        className="h-[450px] md:h-[800px] py-12"
       />
     </section>
   );

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import roomImg from "@/public/roomImg.svg";
+import roomImg from "@/public/roomImg.jpg";
 import img from "@/public/Text Container.png";
 
 const Room = () => {
@@ -8,11 +8,11 @@ const Room = () => {
       <h1 className="md:text-5xl text-4xl text-white font-extrabold text-center uppercase py-4">
         Who is in the Room?
       </h1>
-      <div className="flex flex-col md:flex-row justify-between items-start mt-12 lg:gap-[100px] md:gap-[30px]">
+      <div className="flex flex-col lg:flex-row justify-between items-start mt-12 lg:gap-[100px] md:gap-[30px]">
         <Image
           src={roomImg}
           alt="room-img"
-          className="w-[606px] h-[274px] object-cover md:object-contain md:h-[700px]"
+          className="w-full h-[450px] object-contain lg:object-contain md:h-[750px] lg:w-[606px] lg:h-full"
         />
         <div className="lg:max-w-[550px] w-full mt-6 md:mt-0">
           <p className="text-white text-[1.15rem] md:text-[1.2rem] leading-[30px] lg:leading-[50px] md:leading-[40px] pb-6">
@@ -27,7 +27,7 @@ const Room = () => {
           <Image
             src={img}
             alt="room-text-img"
-            className="w-[548px] lg:h-[330px] md:h-[200px]"
+            className="w-[548px] md:w-full md:h-[235px]"
           />
         </div>
       </div>
