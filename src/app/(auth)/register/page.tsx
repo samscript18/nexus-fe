@@ -80,7 +80,7 @@ export default function Register() {
           className={`bg-[#1a1a1a] text-[#fff] text-[.95rem] md:text-[1rem] lg:text-[1.05rem] font-semibold mt-3 py-3 px-4 rounded-md uppercase`}
         >
           {mutation.isPending || mutation.isSuccess ? (
-            <div className="flex justify-between items-center">
+            <div className="flex justify-center items-center gap-4">
               <BiLoaderAlt size={24} className="animate-spin text-[#fff]" />
               Proceeding to payment
             </div>
