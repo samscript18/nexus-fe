@@ -8,7 +8,7 @@ const Footer = () => {
     <nav className="flex lg:flex-row flex-col justify-between items-center lg:py-[20px] lg:px-[45px] md:py-[10px] md:px-[15px] md:border-2 md:border-[#53aab0]">
       <div className="flex lg:flex-row flex-col-reverse">
         <div className="flex lg:justify-between justify-center items-center text-white lg:gap-10 md:gap-8 gap-6 py-2 lg:py-0">
-          <Link href={`https://www.x.com/N_ext`}>
+          <Link href={`https://www.x.com/NextThe16892`}>
             <FaTwitter size={20} />
           </Link>
           <FaFacebook size={20} />
