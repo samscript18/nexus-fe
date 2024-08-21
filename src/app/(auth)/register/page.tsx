@@ -85,7 +85,7 @@ export default function Register() {
               Proceeding to payment
             </div>
           ) : (
-            <>Submit</>
+            <>Next</>
           )}
         </button>
       </div>
