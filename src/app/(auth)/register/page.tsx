@@ -2,7 +2,6 @@
 import TextField from "@/src/components/textField";
 import { useSignUp } from "@/src/services/auth.service";
 import React, { useState } from "react";
-import toast from "react-hot-toast";
 import { BiLoaderAlt } from "react-icons/bi";
 
 export default function Register() {
@@ -21,7 +20,6 @@ export default function Register() {
       email,
     });
 
-    toast.success("Registration Successful");
   };
 
   return (
