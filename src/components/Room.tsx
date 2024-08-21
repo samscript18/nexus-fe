@@ -1,5 +1,5 @@
 import Image from "next/image";
-import roomImg from "@/public/roomImg.jpg";
+import mailImg from "@/public/mailImg.jpg";
 import img from "@/public/Text Container.png";
 
 const Room = () => {
@@ -8,9 +8,9 @@ const Room = () => {
       <h1 className="md:text-5xl text-4xl text-white font-extrabold text-center uppercase py-4">
         Who is in the Room?
       </h1>
-      <div className="flex flex-col lg:flex-row justify-between items-start mt-12 lg:gap-[100px] md:gap-[30px]">
+      <div className="flex flex-col lg:flex-row justify-between items-start md:mt-12 lg:gap-[100px] md:gap-[30px]">
         <Image
-          src={roomImg}
+          src={mailImg}
           alt="room-img"
           className="w-full h-[450px] object-contain lg:object-contain md:h-[750px] lg:w-[606px] lg:h-full"
         />
